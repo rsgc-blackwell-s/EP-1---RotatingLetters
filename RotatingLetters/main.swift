@@ -51,3 +51,10 @@ for scalar in word.unicodeScalars {
     }
     
 }
+
+// OUTPUT: State whether the word is valid
+if validWord == true {
+    print("YES")
+} else {
+    print("NO")
+}
