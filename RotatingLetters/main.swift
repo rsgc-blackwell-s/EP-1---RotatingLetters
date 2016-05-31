@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Keep looping until a valid input string is provided
+// INPUT: Keep looping until a valid input string is provided
 var word : String = "🇨🇦"
 repeat {
     
@@ -37,3 +37,17 @@ repeat {
     }
     
 } while word == "🇨🇦"
+
+// PROCESS: check the input characters against the allowable characters (I, O, S, H, Z, X, and N)
+var validWord : Bool = true
+for scalar in word.unicodeScalars {
+    
+    // Check this character
+    if !(scalar.value == 73 || scalar.value == 79 || scalar.value == 83 || scalar.value == 72 || scalar.value == 90 || scalar.value == 88 || scalar.value == 78) {
+        
+        validWord = false   // not a valid word
+        break               // stop checking
+        
+    }
+    
+}
