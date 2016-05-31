@@ -24,7 +24,7 @@ repeat {
             
             if scalar.value < 65 || scalar.value > 90 { // 65 to 90 inclusive is all uppercase letters (see: http://unicodelookup.com)
                 validInput = false
-                break                   // stop checking (breakt the loop) since input shown to be invalid
+                break                   // stop checking (break the loop) since input shown to be invalid
             }
             
         }
